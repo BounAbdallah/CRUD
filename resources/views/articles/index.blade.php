@@ -11,7 +11,7 @@
         @endsession
   
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <a class="btn btn-success btn-sm" href="{{ route('articles.create') }}"> <i class="fa fa-plus"></i> Créer un Produit</a>
+            <a class="btn btn-success btn-sm" href="{{ route('articles.create') }}"> <i class="fa fa-plus"></i> Enregistrer un article </a>
         </div>
   
        <table class="table table-bordered table-striped mt-4">
@@ -44,7 +44,7 @@
             </tr>
         @empty
             <tr>
-                <td colspan="4">Pas des produits trouver .</td>
+                <td colspan="4">Pas d'article pour le moment ! </td>
             </tr>
         @endforelse
     </tbody>
