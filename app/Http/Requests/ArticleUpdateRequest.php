@@ -11,7 +11,7 @@ class ArticleUpdateRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,9 @@ class ArticleUpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            // "nom"=>'required',
+            // "description"=>'required',
+            // "image_url"=>'required',
         ];
     }
 }
